@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IT资产管理系统</title>
+    <link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="easyui/demo/demo.css">
+    <script type="text/javascript" src="easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+</head>
+<body>
+<!--<h2>IT资产管理</h2>-->
+<!--<p>The layout contains north,south,west,east and center regions.</p>-->
+<!--<div style="margin:20px 0;"></div>-->
+<script type="text/javascript">
+    var data = [{
+        text: '资产管理',
+        iconCls: 'icon-sum',
+        state: 'open',
+        children: [{
+            text: '电脑资产表'
+        },{
+            text: '显示器资产表'
+        },{
+            text: '花名册'
+            // ,
+            // children: [{
+            //     text: 'Option31'
+            // },{
+            //     text: 'Option32'
+            // }]
+        }]
+    }
+     ,{
+         text: '账户设置',
+         iconCls: 'icon-more',
+         children: [{
+             text: '修改密码'
+         },{
+             text: '注销'
+         }
+         // ,{
+         //     text: 'Option6'
+         // }
+         ]
+     }
+    ];
+
+    // function toggle(){
+    //     var opts = $('#sm').sidemenu('options');
+    //     $('#sm').sidemenu(opts.collapsed ? 'expand' : 'collapse');
+    //     opts = $('#sm').sidemenu('options');
+    //     $('#sm').sidemenu('resize', {
+    //         width: opts.collapsed ? 60 : 200
+    //     })
+    // }
+
+</script>
+<div class="easyui-layout" style="width:100%;height:900px;">
+    <div data-options="region:'north'" style="height:50px;text-align: center;display: table-cell;vertical-align: middle"><h3>IT资产管理系统</h3></div>
+    <div data-options="region:'south',split:true" style="height:50px;"></div>
+<!--    <div data-options="region:'east',split:true" title="East" style="width:100px;"></div>-->
+    <div data-options="region:'west',split:true" title="导航" style="width:200px;">
+<!--        <div style="margin:20px 0;">-->
+<!--            <a href="javascript:;" class="easyui-linkbutton" onclick="toggle()">Toggle</a>-->
+<!--        </div>-->
+        <div id="sm" class="easyui-sidemenu" data-options="data:data"></div>
+    </div>
+    <div data-options="region:'center',title:'详情',iconCls:'icon-ok'">
+<!--        <table class="easyui-datagrid"-->
+<!--               data-options="url:'datagrid_data1.json',method:'get',border:false,singleSelect:true,fit:true,fitColumns:true">-->
+<!--            <thead>-->
+<!--            <tr>-->
+<!--                <th data-options="field:'itemid'" width="80">Item ID</th>-->
+<!--                <th data-options="field:'productid'" width="100">Product ID</th>-->
+<!--                <th data-options="field:'listprice',align:'right'" width="80">List Price</th>-->
+<!--                <th data-options="field:'unitcost',align:'right'" width="80">Unit Cost</th>-->
+<!--                <th data-options="field:'attr1'" width="150">Attribute</th>-->
+<!--                <th data-options="field:'status',align:'center'" width="60">Status</th>-->
+<!--            </tr>-->
+<!--            </thead>-->
+<!--        </table>-->
+        <div id="tt" class="easyui-tabs" style="width:100%;height:700px">
+            <div title="Tab1" style="padding:20px;display:none;">
+                tab1
+            </div>
+            <div title="Tab2" data-options="closable:true" style="overflow:auto;padding:20px;display:none;">
+                tab2
+            </div>
+            <div title="Tab3" data-options="iconCls:'icon-reload',closable:true" style="padding:20px;display:none;">
+                tab3
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
