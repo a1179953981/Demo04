@@ -12,6 +12,9 @@ public class AdminEntity {
     private String admin;
     private String password;
 
+    public AdminEntity(String username, String password) {
+    }
+
     @Basic
     @Column(name = "admin")
     public String getAdmin() {

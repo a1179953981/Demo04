@@ -1,3 +1,7 @@
+package servlet;
+
+import com.AdminEntity;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,13 +14,20 @@ import java.io.PrintWriter;
 public class FromServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
-        System.out.println("用户名："+request.getParameter("username"));
-        System.out.println("密码："+request.getParameter("password"));
-        response.setContentType("text/html;charset=utf-8");
-        PrintWriter out=response.getWriter();
-        out.println("ajax提交成功");
-        out.flush();
-        out.close();
+        String username=request.getParameter("username");
+        String password=request.getParameter("password");
+        System.out.println(username);
+        request.getRequestDispatcher("/show.html").forward(request,response);
+//        response.sendRedirect("index.html");
+//        response.setContentType("text/html;charset=utf-8");
+//        AdminEntity a=new AdminEntity(username,password);
+//        AdminEntity exitUser=userService.login(a);
+//        if(exitUser!=null)
+//        {
+//            request.getSession().setAttribute("user",exitUser);
+//            response.sendRedirect("index.html");
+//        }
+
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
