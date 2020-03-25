@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Custom DataGrid Pager - jQuery EasyUI Demo</title>
+    <link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="easyui/demo/demo.css">
+    <script type="text/javascript" src="easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="easyui/locale/easyui-lang-zh_CN.js"></script>
+</head>
+<body>
+<!--<h2>定制数据表格分页</h2>-->
+<!--<div class="demo-info">-->
+<!--    <div class="demo-tip icon-tip"></div>-->
+<!--    <div>你能够把一些按钮添加到标准的数据表格分页工具条上去.</div>-->
+<!--</div>-->
+<!--<div style="margin:10px 0;"></div>-->
+<table id="dg" class="easyui-datagrid" title="显示器资产表" style="width:100%;"
+       data-options="rownumbers:true,singleSelect:true,pagination:true,url:'../datagrid/datagrid_data1.json'">
+    <thead>
+    <tr>
+        <th data-options="field:'itemid',width:266,align:'center'">编号</th>
+        <th data-options="field:'productid',width:266,align:'center'">品牌</th>
+        <th data-options="field:'listprice',width:266,align:'center'">尺寸</th>
+        <th data-options="field:'unitcost',width:266,align:'center'">使用人</th>
+        <th data-options="field:'attr1',width:266,align:'center'">使用状态</th>
+        <th data-options="field:'status',width:266,align:'center'">备注</th>
+    </tr>
+    </thead>
+</table>
+<script type="text/javascript">
+    $(function(){
+        var pager = $('#dg').datagrid('getPager');  // get the pager of datagrid
+        pager.pagination({
+            buttons:[{
+                iconCls:'icon-search',
+                handler:function(){
+                    alert('搜索');
+                }
+            },{
+                iconCls:'icon-add',
+                handler:function(){
+                    alert('添加');
+                }
+            },{
+                iconCls:'icon-edit',
+                handler:function(){
+                    alert('编辑');
+                }
+            }]
+        });
+    })
+</script>
+</body>
+</html>
