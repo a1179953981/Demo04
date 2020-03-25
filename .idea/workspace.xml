@@ -7,8 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14ca793c-be59-4921-ba77-3a503cd87f57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/t1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/t2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/t3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Demo04_war_exploded/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Demo04_war_exploded/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Demo04_war_exploded/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Demo04_war_exploded/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Demo04_war_exploded/t1.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Demo04_war_exploded/t1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/t1.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/t1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +179,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585029743855</updated>
-      <workItem from="1585029747561" duration="15647000" />
+      <workItem from="1585029747561" duration="20383000" />
     </task>
     <task id="LOCAL-00001" summary="2020年3月24日18点59分">
       <created>1585048206060</created>
@@ -181,11 +188,29 @@
       <option name="project" value="LOCAL" />
       <updated>1585048206060</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2020年3月24日18点59分">
+      <created>1585103139315</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585103139315</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020年3月24日18点59分" />
@@ -196,10 +221,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="828" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585045042742" />
-    <state x="1040" y="119" key="CommitChangelistDialog2" timestamp="1585048201751">
+    <state x="1040" y="119" key="CommitChangelistDialog2" timestamp="1585103138338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1040" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585048201751" />
+    <state x="1040" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585103138338" />
     <state x="1261" y="437" width="382" height="173" key="Github.CreateGistDialog" timestamp="1585047075725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -256,6 +281,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="922" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585047125012" />
+    <state x="1032" y="257" key="Vcs.Push.Dialog.v2" timestamp="1585107881637">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585107881637" />
     <state x="1224" y="315" key="git4idea.merge.GitPullDialog" timestamp="1585103077438">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

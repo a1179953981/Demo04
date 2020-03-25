@@ -14,12 +14,13 @@
     // alert("123")
     $('#ff').form('submit');
   }
-  // function clearForm(){
-  //   $('#ff').form('clear');
-  // }
+  function clearForm(){
+    $('#ff').form('clear');
+  }
 </script>
 <body>
 <!--<div style="margin:20px 0;"></div>-->
+<form id="ff">
 <div class="easyui-panel" style="border:none;width:400px;padding:50px 60px;position: absolute;left: 50%;top: 50%;margin-left: -200px;margin-top: -100px">
   <div style="margin-bottom:20px">
     <input class="easyui-textbox" prompt="Username" iconWidth="28" style="width:100%;height:34px;padding:10px;">
@@ -28,9 +29,10 @@
     <input class="easyui-passwordbox" prompt="Password" iconWidth="28" style="width:100%;height:34px;padding:10px">
   </div>
   <div style="text-align:center;padding:5px 0">
-    <a href="show.html" class="easyui-linkbutton" onclick="submitForm()" style="width:80px">登录</a>
-<!--    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()" style="width:80px">Clear</a>-->
+    <a href="show.html" class="easyui-linkbutton" onclick="submitForm()" style="width:80px">login</a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()" style="width:80px">Clear</a>
   </div>
 </div>
+</form>
 </body>
 </html>
