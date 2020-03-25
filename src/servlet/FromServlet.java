@@ -16,17 +16,15 @@ public class FromServlet extends HttpServlet {
         request.setCharacterEncoding("utf-8");
         String username=request.getParameter("username");
         String password=request.getParameter("password");
-        System.out.println(username);
-        request.getRequestDispatcher("/show.html").forward(request,response);
-//        response.sendRedirect("index.html");
-//        response.setContentType("text/html;charset=utf-8");
-//        AdminEntity a=new AdminEntity(username,password);
-//        AdminEntity exitUser=userService.login(a);
-//        if(exitUser!=null)
-//        {
-//            request.getSession().setAttribute("user",exitUser);
-//            response.sendRedirect("index.html");
-//        }
+//        System.out.println(username);
+        response.setContentType("text/html;charset=utf-8");
+        AdminEntity a=new AdminEntity(username,password);
+        AdminEntity exitUser=userService.login(a);
+        if(exitUser!=null)
+        {
+            request.getSession().setAttribute("user",exitUser);
+            response.sendRedirect("show.html");
+        }
 
     }
 
