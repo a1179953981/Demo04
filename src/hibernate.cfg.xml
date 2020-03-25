@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="hibernate.format_sql">true</property>
+    <property name="connection.url">jdbc:mysql://203.195.135.48:3306/asset</property>
+
+    <!-- DB schema will be updated if needed -->
+     <property name="hibernate.hbm2ddl.auto">update</property>
+    <mapping class="com.MonitorEntity"/>
+    <mapping resource="MonitorEntity.hbm.xml"/>
+    <mapping class="com.UserEntity"/>
+    <mapping resource="UserEntity.hbm.xml"/>
+    <mapping class="com.AdminEntity"/>
+    <mapping resource="AdminEntity.hbm.xml"/>
+    <mapping class="com.ComputerHostEntity"/>
+    <mapping resource="ComputerHostEntity.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
